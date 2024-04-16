@@ -1,92 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/yash/Desktop/content_sharing/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/home/yash/Desktop/content_sharing/app/helpers/profiles_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/home/yash/Desktop/content_sharing/app/helpers/registrations_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/home/yash/Desktop/content_sharing/app/helpers/static_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/home/yash/Desktop/content_sharing/app/controllers/profiles_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/yash/Desktop/content_sharing/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/yash/Desktop/content_sharing/app/models/user.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null
-        ]
-      },
-      "/home/yash/Desktop/content_sharing/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/yash/Desktop/content_sharing/app/models/profile.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
       "/home/yash/Desktop/content_sharing/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
@@ -107,13 +21,40 @@
         "branches": {
         }
       },
-      "/home/yash/Desktop/content_sharing/app/controllers/registrations_controller.rb": {
+      "/home/yash/Desktop/content_sharing/app/controllers/application_controller.rb": {
         "lines": [
           0,
           0,
           0,
+          null,
           0,
           null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/controllers/logins_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/controllers/profiles_controller.rb": {
+        "lines": [
+          0,
+          0,
           0,
           null,
           0,
@@ -134,10 +75,94 @@
         "branches": {
         }
       },
+      "/home/yash/Desktop/content_sharing/app/controllers/registrations_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/home/yash/Desktop/content_sharing/app/controllers/static_controller.rb": {
         "lines": [
           0,
           0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/helpers/application_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/helpers/logins_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/helpers/profiles_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/helpers/registrations_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/helpers/static_helper.rb": {
+        "lines": [
           0,
           0
         ],
@@ -166,8 +191,36 @@
         ],
         "branches": {
         }
+      },
+      "/home/yash/Desktop/content_sharing/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/models/profile.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/models/user.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1713181566
+    "timestamp": 1713249958
   }
 }

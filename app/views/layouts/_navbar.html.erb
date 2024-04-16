@@ -3,7 +3,7 @@
     <!-- Container wrapper -->
     <div class="container-fluid">
       <!-- Navbar brand -->
-      <a class="navbar-brand" href="#">Navbar</a>
+      <%= link_to "Content Sharing", root_path, class: "navbar-brand" %>
   
       <!-- Toggle button -->
       <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
@@ -17,13 +17,40 @@
         <!-- Left links -->
         <ul class="navbar-nav me-auto d-flex flex-row mt-3 mt-lg-0">
           <li class="nav-item text-center mx-2 mx-lg-1">
-            <a class="nav-link active" aria-current="page" href="#!">
+            <%= link_to root_path, class: "nav-link current_page(login_path) ? active", aria_current: 'page' do %>
               <div>
                 <i class="fas fa-home fa-lg mb-1"></i>
               </div>
               Home
-            </a>
+            <% end %>
           </li>
+          <% if current_user %>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="navbarDropdown" role="button" aria-expanded="false">
+                <div>
+                  <i class="fa-regular fa-user fa-lg"></i>
+                  <span class="badge rounded-pill badge-notification bg-primary">11</span>
+                </div>
+                My Profile
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <%= link_to 'Logout', logout_path, data: {turbo_method: :delete}, class: "dropdown-item current_page(logout_path) ? active" %>
+              </ul>
+            </div>
+          <% else %>  
+            <li class="nav-item text-center mx-2 mx-lg-1">
+              <%= link_to login_path, class: "nav-link current_page(login_path) ? active" do %>
+                <div>
+                  <i class="far fa-envelope fa-lg mb-1"></i>
+                  <span class="badge rounded-pill badge-notification bg-danger">11</span>
+                </div>
+                Login
+              <% end %>
+            </li>
+          <% end %>
           <li class="nav-item text-center mx-2 mx-lg-1">
             <a class="nav-link" href="#!">
               <div>
@@ -42,21 +69,6 @@
               Disabled
             </a>
           </li>
-
-          <div class="dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="navbarDropdown" role="button" aria-expanded="false">
-              <div>
-                <i class="far fa-envelope fa-lg mb-1"></i>
-                <span class="badge rounded-pill badge-notification bg-primary">11</span>
-              </div>
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
         </ul>
         <!-- Left links -->
   
