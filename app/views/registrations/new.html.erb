@@ -57,9 +57,12 @@
                   </div>
 
                   <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <%= f.submit "Next", class: "btn btn-primary btn-lg", data: { mdb_button_init: true, mdb_ripple_init: true } %>
+                    <%= f.submit "Register", class: "btn btn-primary btn-lg", data: { mdb_button_init: true, mdb_ripple_init: true } %>
                   </div>
                 <% end %>
+                <div class="form-check d-flex justify-content-center mb-5">
+                  <p>Already have an account? <%= link_to 'Login', login_path %> </p>
+                </div>
               </div>
               <div
                 class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2"
