@@ -41,8 +41,65 @@
         "branches": {
         }
       },
+      "/home/yash/Desktop/content_sharing/app/controllers/articles_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/controllers/contents_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/home/yash/Desktop/content_sharing/app/controllers/logins_controller.rb": {
         "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
           0,
           0,
           0,
@@ -86,36 +143,11 @@
           0,
           null,
           0,
-          null,
           0,
           0,
           0,
           0,
           0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/yash/Desktop/content_sharing/app/controllers/static_controller.rb": {
-        "lines": [
-          0,
-          0,
-          null,
           0,
           0,
           null,
@@ -130,6 +162,29 @@
         }
       },
       "/home/yash/Desktop/content_sharing/app/helpers/application_helper.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/helpers/articles_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/helpers/contents_helper.rb": {
         "lines": [
           0,
           0
@@ -154,14 +209,6 @@
         }
       },
       "/home/yash/Desktop/content_sharing/app/helpers/registrations_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/yash/Desktop/content_sharing/app/helpers/static_helper.rb": {
         "lines": [
           0,
           0
@@ -201,6 +248,68 @@
         "branches": {
         }
       },
+      "/home/yash/Desktop/content_sharing/app/models/article.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/models/audio.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/models/concerns/authenticated.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/models/content.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/models/document.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/models/image.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/home/yash/Desktop/content_sharing/app/models/profile.rb": {
         "lines": [
           0,
@@ -214,6 +323,16 @@
         "lines": [
           0,
           0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/models/video.rb": {
+        "lines": [
           0,
           0
         ],
@@ -221,6 +340,6 @@
         }
       }
     },
-    "timestamp": 1713249958
+    "timestamp": 1713353307
   }
 }

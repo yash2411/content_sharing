@@ -1,0 +1,2 @@
+class Document < Content
+end
