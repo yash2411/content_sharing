@@ -2,3 +2,4 @@
 //= link application.js
 //= link custom.css
 //= link_tree ../builds
+//= link actiontext.css

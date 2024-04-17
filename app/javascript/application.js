@@ -5,3 +5,9 @@ import "./controllers";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/js/all";
+import "trix";
+import "@rails/actiontext";
+// app/assets/javascripts/application.js
+//= require jquery
+//= require bootstrap
+//= require summernote
