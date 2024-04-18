@@ -15,9 +15,15 @@ class RegistrationsController < ApplicationController
         end
     end
 
+    def check_email_uniqueness
+        email = params[:email]
+        user = User.find_by(email: email)
+        render json: { unique: user.nil? }
+    end
+
     private
 
     def user_params
-        params.require(:user).permit(:email, :password, :password_confirmation)
+        params.require(:user).permit(:email, :password, :password_confirmation, :terms_of_service)
     end
 end

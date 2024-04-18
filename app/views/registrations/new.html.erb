@@ -1,4 +1,4 @@
-<section class="vh-100" style="background-color: #eee">
+<section class="vh-100">
   <div class="container h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-lg-12 col-xl-11">
@@ -14,9 +14,9 @@
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div
                       data-mdb-input-init
-                      class="form-outline flex-fill mb-0"
+                      class="form-outline flex-fill mb-0 email_form"
                     >
-                    <%= f.text_field :email, class: "form-control", id: "form3Example3c" %>
+                    <%= f.text_field :email, class: "form-control email_reg", id: "form3Example3c", data: {turbo_eval: false} %>
                     <%= f.label :email, "Your Email", class: "form-label", for: "form3Example3c" %>
                     </div>
                   </div>
@@ -25,9 +25,9 @@
                     <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                     <div
                       data-mdb-input-init
-                      class="form-outline flex-fill mb-0"
+                      class="form-outline flex-fill mb-0 password_check"
                     >
-                    <%= f.password_field :password, class: "form-control", id: "form3Example4c" %>
+                    <%= f.password_field :password, class: "form-control password_field", id: "form3Example4c" %>
                     <%= f.label :password, "Password", class: "form-label", for: "form3Example4c" %>
                     </div>
                   </div>
@@ -36,20 +36,15 @@
                     <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                     <div
                       data-mdb-input-init
-                      class="form-outline flex-fill mb-0"
+                      class="form-outline flex-fill mb-0 password_conf_check"
                     >
-                    <%= f.password_field :password, class: "form-control", id: "form3Example4cd" %>
-                    <%= f.label :password, "Repeat your password", class: "form-label", for: "form3Example4cd" %>
+                    <%= f.password_field :password_confirmation, class: "form-control password_conf_field", id: "form3Example4cd" %>
+                    <%= f.label :password_confirmation, "Repeat your password", class: "form-label", for: "form3Example4cd" %>
                     </div>
                   </div>
 
                   <div class="form-check d-flex justify-content-center mb-5">
-                    <input
-                      class="form-check-input me-2"
-                      type="checkbox"
-                      value=""
-                      id="form2Example3c"
-                    />
+                    <%= f.check_box :terms_of_service, class: "form-check-input me-2", id: "form2Example3c" %>
                     <label class="form-check-label" for="form2Example3">
                       I agree all statements in
                       <a href="#!">Terms of service</a>
