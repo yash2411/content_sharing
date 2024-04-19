@@ -98,6 +98,8 @@
           0,
           0,
           0,
+          0,
+          0,
           null,
           0,
           0,
@@ -145,6 +147,12 @@
           0,
           0,
           0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
           0,
           0,
           0,
@@ -239,6 +247,14 @@
         "branches": {
         }
       },
+      "/home/yash/Desktop/content_sharing/app/mailers/email_confirmation_mailer.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/home/yash/Desktop/content_sharing/app/models/application_record.rb": {
         "lines": [
           0,
@@ -314,6 +330,10 @@
         "lines": [
           0,
           0,
+          null,
+          0,
+          0,
+          0,
           0
         ],
         "branches": {
@@ -326,6 +346,12 @@
           null,
           0,
           0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
           0
         ],
         "branches": {
@@ -340,6 +366,6 @@
         }
       }
     },
-    "timestamp": 1713353307
+    "timestamp": 1713506862
   }
 }

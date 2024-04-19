@@ -4,3 +4,16 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+.card-box .card-drop {
+    color: #9a9da0;
+    font-size: 20px;
+    line-height: 1px;
+    padding: 0px 5px;
+    display: inline-block;
+}
+
+.text-muted {
+    color: #9a9da0 !important;
+}
+
+.logo-alt-box h5 {}

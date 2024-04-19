@@ -1,5 +1,7 @@
 class LoginsController < ApplicationController
   skip_before_action :authenticate_user
+  skip_before_action :check_account_status
+
   include Authenticated
 
   def new

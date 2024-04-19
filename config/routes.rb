@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'signup', to: "registrations#new"
   post 'signup', to: "registrations#create"
   get '/users/check_email_uniqueness', to: 'registrations#check_email_uniqueness'
+  get '/verify_email', to: "registrations#verify_email"
+  get '/verify_account', to: "registrations#verify_account"
 
 
   get 'new_profile', to: "profiles#new"
