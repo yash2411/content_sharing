@@ -82,5 +82,4 @@ gem "jsbundling-rails", "~> 1.3"
 
 gem "byebug"
 
-gem 'quilljs-rails'
-
+gem "sidekiq-cron"
