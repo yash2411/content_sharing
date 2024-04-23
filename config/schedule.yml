@@ -1,0 +1,4 @@
+# Example schedule.yml
+delete_inactive_users_job:
+  class: DeleteInactiveUsersJob 
+  cron: '0 0 * * *'
