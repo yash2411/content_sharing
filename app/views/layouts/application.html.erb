@@ -18,9 +18,11 @@
   <body>
     <%= render partial: "layouts/navbar" %>
     <% flash.each do |key, value| %>
-      <div class="alert alert-<%= key %> alert-dismissible fade show mx-2" role="alert">
-        <%= value %>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <div class="flash">
+        <div class="alert alert-<%= key %> alert-dismissible fade show mx-2" role="alert">
+          <%= value %>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
       </div>
     <% end %>
     <%= yield %>

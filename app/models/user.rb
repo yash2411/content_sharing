@@ -12,6 +12,10 @@ class User < ApplicationRecord
   
     has_one :profile, dependent: :destroy
     has_many :articles, dependent: :destroy
+    has_many :audios, dependent: :destroy
+    has_many :videos, dependent: :destroy
+    has_many :images, dependent: :destroy
+    has_many :documents, dependent: :destroy
   
     # Helper method to check for password change
     def password_changed?

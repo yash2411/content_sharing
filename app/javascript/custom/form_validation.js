@@ -48,8 +48,9 @@ function checkInput(event) {
     displayMessage(message, color);
   }
 }
-
-emailInputElement.addEventListener("input", checkInput);
+if (emailInputElement) {
+  emailInputElement.addEventListener("input", checkInput);
+}
 
 function displayPasswordMessage(message, color, element) {
   console.log("Hello");
@@ -98,8 +99,9 @@ function checkPassword(event) {
     }
   }
 }
-
-passwordInputElement.addEventListener("input", checkPassword);
+if (passwordInputElement) {
+  passwordInputElement.addEventListener("input", checkPassword);
+}
 
 function checkPasswordConf(event) {
   let value = document.querySelector(".password_field").value;
@@ -127,4 +129,42 @@ function checkPasswordConf(event) {
     );
   }
 }
-passwordConfirmationInputElement.addEventListener("input", checkPasswordConf);
+if (passwordConfirmationInputElement) {
+  passwordConfirmationInputElement.addEventListener("input", checkPasswordConf);
+}
+
+let imageInputElement = document.querySelector(".image-input");
+let imageFieldElement = document.querySelector(".image-field");
+
+function displayImageMessage(message, color) {
+  const smallElement = document.createElement("small");
+  smallElement.innerText = message;
+  smallElement.style.color = color;
+  const existingSmallElement = imageFieldElement.querySelector("small");
+  if (existingSmallElement) {
+    existingSmallElement.remove();
+  }
+  imageFieldElement.append(smallElement);
+}
+
+function validateImage(event) {
+  for (let i = 0; i < imageInputElement.files.length; i++) {
+    let flag = ["image/png", "image/jpeg", "image/jpg"].includes(
+      imageInputElement.files[i].type
+    );
+    console.log(imageInputElement.files[i].type);
+    if (!flag) {
+      displayImageMessage("Invalid image file", "red");
+      break;
+    } else {
+      const existingSmallElement = imageFieldElement.querySelector("small");
+      if (existingSmallElement) {
+        existingSmallElement.remove();
+      }
+    }
+  }
+}
+
+if (imageInputElement) {
+  imageInputElement.addEventListener("change", validateImage);
+}

@@ -8,3 +8,5 @@ import "@fortawesome/fontawesome-free/js/all";
 import "trix";
 import "@rails/actiontext";
 import "./custom/form_validation.js";
+import "./custom/audio_form_validation.js";
+import "./custom/video_form_validation.js";

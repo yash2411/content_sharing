@@ -26,7 +26,12 @@
           0,
           0,
           0,
+          0,
           null,
+          0,
+          null,
+          0,
+          0,
           0,
           null,
           0,
@@ -71,9 +76,57 @@
         "branches": {
         }
       },
+      "/home/yash/Desktop/content_sharing/app/controllers/audios_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/home/yash/Desktop/content_sharing/app/controllers/contents_controller.rb": {
         "lines": [
           0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/controllers/documents_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/controllers/images_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
           0,
           0,
           0
@@ -85,6 +138,8 @@
         "lines": [
           0,
           0,
+          0,
+          null,
           0,
           null,
           0,
@@ -138,6 +193,15 @@
         "lines": [
           0,
           0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
           0,
           null,
           0,
@@ -151,6 +215,8 @@
           0,
           0,
           0,
+          null,
+          0,
           0,
           null,
           0,
@@ -160,8 +226,36 @@
           0,
           null,
           0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/controllers/videos_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
           0,
           0,
           0
@@ -192,7 +286,31 @@
         "branches": {
         }
       },
+      "/home/yash/Desktop/content_sharing/app/helpers/audios_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/home/yash/Desktop/content_sharing/app/helpers/contents_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/helpers/documents_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/helpers/images_helper.rb": {
         "lines": [
           0,
           0
@@ -217,6 +335,14 @@
         }
       },
       "/home/yash/Desktop/content_sharing/app/helpers/registrations_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/yash/Desktop/content_sharing/app/helpers/videos_helper.rb": {
         "lines": [
           0,
           0
@@ -249,6 +375,19 @@
       },
       "/home/yash/Desktop/content_sharing/app/mailers/email_confirmation_mailer.rb": {
         "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
           0,
           0
         ],
@@ -304,7 +443,6 @@
         "lines": [
           0,
           0,
-          0,
           0
         ],
         "branches": {
@@ -346,13 +484,22 @@
           null,
           0,
           0,
+          null,
+          null,
           0,
+          0,
+          null,
           0,
           null,
           0,
           0,
           null,
-          0
+          null,
+          0,
+          0,
+          0,
+          0,
+          null
         ],
         "branches": {
         }
@@ -364,8 +511,26 @@
         ],
         "branches": {
         }
+      },
+      "/home/yash/Desktop/content_sharing/app/sidekiq/delete_inactive_users_job.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1713506862
+    "timestamp": 1713857327
   }
 }

@@ -83,3 +83,5 @@ gem "jsbundling-rails", "~> 1.3"
 gem "byebug"
 
 gem "sidekiq-cron"
+
+gem 'activestorage-validator'
