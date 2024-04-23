@@ -21,7 +21,10 @@ Rails.application.routes.draw do
   delete 'logout', to: 'logins#destroy'
 
   resources :articles
-  resources :messages
+  resources :audios
+  resources :videos
+  resources :images
+  resources :documents
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

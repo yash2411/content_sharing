@@ -4,6 +4,9 @@
 
 import { application } from "./application"
 
+import AudioFormController from "./audio_form_controller"
+application.register("audio-form", AudioFormController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 

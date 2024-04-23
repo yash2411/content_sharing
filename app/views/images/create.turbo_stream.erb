@@ -1,0 +1,25 @@
+<turbo-stream action="replace" target="image-form">
+  <template>
+    <div class="container mt-4">
+      <%= form_for @image, class: "form image", local: true do |f| %>
+          <div class="mb-3 w-25 mx-auto title-field">
+              <%= f.label :caption, "caption", class: "form-label" %>
+              <%= f.text_field :caption, class: "form-control title-input" %>
+          </div>
+    
+          <div class="mb-3 w-25 mx-auto image-field">
+              <%= f.label :images, "Upload images", for: "formFileMultiple", class: "form-label" %>
+              <%= f.file_field :images, multiple: true, class: "form-control image-input", id: "formFileMultiple" %>
+              <small><%= @image.errors.full_messages.first.humanize %></small>
+          </div>
+    
+          <div class="mb-3 w-25 mx-auto">
+              <%= f.submit "Publish image", class: "btn btn-dark mx-auto" %> 
+          </div>
+    
+      <% end %>
+    </div>
+    
+    
+  </template>
+</turbo-stream>

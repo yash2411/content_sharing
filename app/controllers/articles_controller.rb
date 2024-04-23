@@ -9,16 +9,16 @@ class ArticlesController < ApplicationController
   def create
     @article = current_user.articles.build(article_params)
     if @article.save
-      flash[:notice] = "Your article published successfully"
+      flash[:success] = "Your article published successfully"
       redirect_to root_path
     else
-      flash[:error] = "Something went wrong, Please try again"
+      flash[:danger] = "Something went wrong, Please try again"
     end
   end
 
   private
 
   def article_params
-    params.require(:article).permit(:title, :description)
+    params.require(:article).permit(:title, :body)
   end
 end
