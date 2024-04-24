@@ -147,12 +147,27 @@ function displayImageMessage(message, color) {
   imageFieldElement.append(smallElement);
 }
 
+function previewImage() {
+  const existingImageElements = imageFieldElement.querySelectorAll("img");
+  existingImageElements.forEach(function (imgElement) {
+    imgElement.remove();
+  });
+
+  for (let i = 0; i < imageInputElement.files.length; i++) {
+    let imageElement = document.createElement("img");
+    imageElement.src = URL.createObjectURL(imageInputElement.files[i]);
+    imageElement.style.width = "100px";
+    imageElement.style.height = "100px";
+    imageElement.style.margin = "10px";
+    imageFieldElement.append(imageElement);
+  }
+}
+
 function validateImage(event) {
   for (let i = 0; i < imageInputElement.files.length; i++) {
     let flag = ["image/png", "image/jpeg", "image/jpg"].includes(
       imageInputElement.files[i].type
     );
-    console.log(imageInputElement.files[i].type);
     if (!flag) {
       displayImageMessage("Invalid image file", "red");
       break;
@@ -161,6 +176,7 @@ function validateImage(event) {
       if (existingSmallElement) {
         existingSmallElement.remove();
       }
+      previewImage();
     }
   }
 }
