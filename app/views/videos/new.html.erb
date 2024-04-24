@@ -1,24 +1,29 @@
 <div class="container mt-4">
     <%= form_for @video, class: "form video",  data: {controller: 'audio-form', action: "turbo:submit-end->audio-form#audioFormValidate" } do |f| %>
-        <div class="mb-3 w-25 mx-auto title-field">
-            <%= f.label :title, "Title", class: "form-label" %>
-            <%= f.text_field :title, class: "form-control title-input" %>
-        </div>
-
-        <div class="mb-3 w-25 mx-auto desc-field">
-            <%= f.label :description, "Description", class: "form-label" %>
-            <%= f.text_field :description, class: "form-control editor-size desc-input" %>    
-        </div>
-
-        <div class="mb-3 w-25 mx-auto video-field">
-            <%= f.label :videos, "Upload videos", for: "formFileMultiple", class: "form-label" %>
-            <%= f.file_field :videos, multiple: true, class: "form-control video-input", id: "formFileMultiple" %>
-        </div>
-
-        <div class="mb-3 w-25 mx-auto">
-            <%= f.submit "Publish video", class: "btn btn-dark mx-auto" %> 
-        </div>
-
+      <div class="mb-3 w-25 mx-auto title-field">
+        <%= f.label :title, "Title", class: "form-label" %>
+        <%= f.text_field :title, class: "form-control title-input", aria_label: "Enter video title", maxlength: 255 %>
+        <div class="text-muted">Max 255 characters</div>
+      </div>
+  
+      <div class="mb-3 w-25 mx-auto desc-field">
+        <i class="fa-solid fa-file-alt"></i>  
+        <%= f.label :description, "Description", class: "form-label" %>
+        <%= f.text_area :description, class: "form-control editor-size desc-input", aria_label: "Enter video description", maxlength: 1000 %>    
+        <div class="text-muted">Max 1000 characters</div> 
+      </div>
+  
+      <div class="mb-3 w-25 mx-auto video-field">
+          <i class="fa-regular fa-file-video"></i>
+          <%= f.label :videos, "Upload video(s)", for: "formFileMultiple", class: "form-label" %>
+          <%= f.file_field :videos, multiple: true, class: "form-control video-input", id: "formFileMultiple", accept: "video/*" %>
+          <div id="upload-progress"></div>
+        <div class="text-muted">Supported formats: MP4, WebM (max 200MB)</div>
+      </div>
+  
+      <div class="mb-3 w-25 mx-auto">
+        <%= f.submit "Publish video", class: "btn btn-dark mx-auto btn-rounded", aria_label: "Publish video" %> </div>
+  
     <% end %>
-</div>
-
+  </div>
+  

@@ -50,6 +50,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_23_070808) do
   end
 
   create_table "contents", force: :cascade do |t|
+    t.string "type"
     t.string "title"
     t.integer "user_id", null: false
     t.datetime "created_at", null: false

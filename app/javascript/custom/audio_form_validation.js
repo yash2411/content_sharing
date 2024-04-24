@@ -12,9 +12,24 @@ function displayAudioMessage(message, color) {
   audioFieldElement.append(smallElement);
 }
 
+function previewAudio() {
+  const existingAudioElements = audioFieldElement.querySelectorAll("audio");
+  existingAudioElements.forEach(function (audioElement) {
+    audioElement.remove();
+  });
+
+  for (let i = 0; i < audioInputElement.files.length; i++) {
+    let audioPreviewElement = document.createElement("audio");
+    audioPreviewElement.controls = true; // Add controls to the audio element
+    audioPreviewElement.src = URL.createObjectURL(audioInputElement.files[i]);
+    audioPreviewElement.style.margin = "10px";
+    audioFieldElement.appendChild(audioPreviewElement);
+  }
+}
+
 function validateAudio(event) {
   for (let i = 0; i < audioInputElement.files.length; i++) {
-    let flag = ["audio/mpeg", "audio/mp3"].includes(
+    let flag = ["audio/mpeg", "audio/mp3", "audio/wav"].includes(
       audioInputElement.files[i].type
     );
     if (!flag) {
@@ -25,6 +40,7 @@ function validateAudio(event) {
       if (existingSmallElement) {
         existingSmallElement.remove();
       }
+      previewAudio();
     }
   }
 }

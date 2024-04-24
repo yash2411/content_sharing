@@ -1,2 +1,27 @@
-<h1>Documents#new</h1>
-<p>Find me in app/views/documents/new.html.erb</p>
+<div class="container mt-4">
+    <%= form_for @document, class: "form",  data: {controller: 'document-form', action: "turbo:submit-end->document-form#documentFormValidate" } do |f| %>
+        <div class="mb-3 w-25 mx-auto title-field">
+            <%= f.label :title, "Document Title (Max 255 characters)", class: "form-label", for: "titleInput" %>
+            <%= f.text_field :title, class: "form-control title-input", id: "titleInput", maxlength: 255, placeholder: "Enter a descriptive title" %>
+        </div>
+
+        <div class="mb-3 w-25 mx-auto desc-field">
+            <%= f.label :description, "Document Description (Max 1000 characters)", class: "form-label", for: "descInput" %>
+            <%= f.text_area :description, class: "form-control editor-size desc-input", id: "descInput", maxlength: 1000, placeholder: "Provide a detailed description" %> 
+        </div>
+
+        <div class="mb-3 w-25 mx-auto document-field">
+            <i class="fa-regular fa-file"></i>
+            <%= f.label :files, "Upload documents (PDF, DOC, TXT only)", class: "form-label", for: "formFileMultiple" %>
+            <div class="custom-file"> 
+              <%= f.file_field :files, multiple: true, class: "form-control document-input", id: "formFileMultiple", accept: ".pdf,.doc,.docx,.txt" %>
+            </div>
+            <div id="upload-progress"></div> 
+          </div>
+          
+
+        <div class="mb-3 w-25 mx-auto">
+            <%= f.submit "Publish Document", class: "btn btn-primary mx-auto" %> </div>
+
+    <% end %>
+</div>

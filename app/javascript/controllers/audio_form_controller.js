@@ -3,16 +3,19 @@ import { Controller } from "@hotwired/stimulus";
 // Connects to data-controller="audio-form"
 export default class extends Controller {
   displayFormMessage(message, color, element) {
-    const existingSmallElement = element.querySelector("small");
-    if (existingSmallElement) {
-      existingSmallElement.remove();
-    }
+    this.removeSmallElement(element);
     const smallElement = document.createElement("small");
     smallElement.innerText = message;
     smallElement.style.color = color;
     element.append(smallElement);
   }
 
+  removeSmallElement(element) {
+    const existingSmallElement = element.querySelector("small");
+    if (existingSmallElement) {
+      existingSmallElement.remove();
+    }
+  }
   audioFormValidate() {
     let titleInputElement = document.querySelector(".title-input");
     let titleInputField = document.querySelector(".title-field");
@@ -24,6 +27,8 @@ export default class extends Controller {
         "red",
         titleInputField
       );
+    } else {
+      this.removeSmallElement(titleInputField);
     }
     if (!descInputElement.value) {
       this.displayFormMessage(
@@ -31,6 +36,8 @@ export default class extends Controller {
         "red",
         descInputField
       );
+    } else {
+      this.removeSmallElement(descInputField);
     }
   }
   connect() {}

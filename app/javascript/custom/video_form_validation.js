@@ -12,6 +12,21 @@ function displayVideoMessage(message, color) {
   videoFieldElement.append(smallElement);
 }
 
+function previewVideo() {
+  const existingVideoElements = videoFieldElement.querySelectorAll("video");
+  existingVideoElements.forEach(function (videoElement) {
+    videoElement.remove();
+  });
+
+  for (let i = 0; i < videoInputElement.files.length; i++) {
+    let videoPreviewElement = document.createElement("video");
+    videoPreviewElement.controls = true; // Add controls to the video element
+    videoPreviewElement.src = URL.createObjectURL(videoInputElement.files[i]);
+    videoPreviewElement.style.margin = "10px";
+    videoFieldElement.appendChild(videoPreviewElement);
+  }
+}
+
 function validateVideo(event) {
   for (let i = 0; i < videoInputElement.files.length; i++) {
     let flag = ["video/mp4"].includes(videoInputElement.files[i].type);
@@ -24,6 +39,7 @@ function validateVideo(event) {
       if (existingSmallElement) {
         existingSmallElement.remove();
       }
+      previewVideo();
     }
   }
 }
